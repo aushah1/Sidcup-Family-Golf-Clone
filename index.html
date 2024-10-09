@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="nav">
-      <img src="assets/images/logo-white.svg" alt="logo" />
-      <h4>TOPRACER RANGE</h4>
-      <h4>GOLF LESSON</h4>
-      <h4>ADVENTURE GOLF</h4>
-      <h4>CAFE</h4>
-      <h4>EVENTS</h4>
+    <div class="container">
+      <div id="nav">
+        <img src="assets/images/logo-white.svg" alt="logo" />
+        <h4>TOPRACER RANGE</h4>
+        <h4>GOLF LESSON</h4>
+        <h4>ADVENTURE GOLF</h4>
+        <h4>CAFE</h4>
+        <h4>EVENTS</h4>
+      </div>
+      <div id="btns">
+        <button class="btn">BOOK RANGE</button>
+        <button class="btn">BOOK GOLF</button>
+        <button class="btn hid">BOOK NOW</button>
+      </div>
     </div>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
@@ -49,7 +56,7 @@
         </div>
 
         <div id="about-us">
-          <img src="assets/images/img1.avif" alt="image" />
+          <img src="assets/images/img1.avif" alt="image" class="about-img" />
           <div id="about-us-in">
             <h3>About Us</h3>
             <p>
@@ -60,7 +67,23 @@
               dinosaur themed crazy golf courses.
             </p>
           </div>
-          <img src="assets/images/img2.webp" alt="image" />
+          <img src="assets/images/img2.webp" alt="image" class="about-img" />
+        </div>
+        <div id="about-us-2">
+          <div class="img-cont">
+            <img src="assets/images/img1.avif" alt="image" class="about-img" />
+            <img src="assets/images/img2.webp" alt="image" class="about-img" />
+          </div>
+          <div id="about-us-in">
+            <h3>About Us</h3>
+            <p>
+              Home to a 46-bay, multi-tier, floodlit driving range, powered by
+              Toptracer Range technology. Complimented by a practice green and
+              bunker, coffee shop and American Golf Store. There truly is
+              something for everyone as we also boast two outdoor 18-hole
+              dinosaur themed crazy golf courses.
+            </p>
+          </div>
         </div>
 
         <div id="cards-container">
@@ -128,31 +151,29 @@
       </div>
     </div>
     <div id="footer">
-      <div id="footer">
-        <img src="assets/images/dots-footer.svg" alt="" />
-        <div id="f1">
-          <img src="assets/images/logo-white.svg" alt="" />
-        </div>
-        <div id="f2">
-          <h3>TOPTRACER Ranges</h3>
-          <h3>Golf Lessons</h3>
-          <h3>Adventure Golf</h3>
-        </div>
-        <div id="f3">
-          <h3>coffee shop</h3>
-          <h3>LEAGUES</h3>
-          <h3>Contact us</h3>
-        </div>
-        <div id="f4">
-          <h4>
-            A20, SIDCUP BYPASS <br />
-            CHISLEHURST <br />
-            KENT <br />
-            BR7 6RP <br />
-            TEL: 0208 309 0181 <br />
-            GET DIRECTIONS <br />
-          </h4>
-        </div>
+      <img src="assets/images/dots-footer.svg" alt="" />
+      <div id="f1" class="f-elem">
+        <img src="assets/images/logo-white.svg" alt="" />
+      </div>
+      <div id="f2" class="f-elem">
+        <h3>TOPTRACER Ranges</h3>
+        <h3>Golf Lessons</h3>
+        <h3>Adventure Golf</h3>
+      </div>
+      <div id="f3" class="f-elem">
+        <h3>coffee shop</h3>
+        <h3>LEAGUES</h3>
+        <h3>Contact us</h3>
+      </div>
+      <div id="f4" class="f-elem">
+        <h3>
+          A20, SIDCUP BYPASS <br />
+          CHISLEHURST <br />
+          KENT <br />
+          BR7 6RP <br />
+          TEL: 0208 309 0181 <br />
+          GET DIRECTIONS <br />
+        </h3>
       </div>
     </div>
     <script

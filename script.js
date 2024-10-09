@@ -2,18 +2,18 @@ var crsr = document.querySelector("#cursor");
 var crsrBlur = document.querySelector("#cursor-blur");
 
 document.addEventListener("mousemove", function (dets) {
-  crsr.style.left = dets.x + 30 + "px";
+  crsr.style.left = dets.x + 20 + "px";
   crsr.style.top = dets.y + "px";
   crsrBlur.style.left = dets.x - 250 + "px";
   crsrBlur.style.top = dets.y - 250 + "px";
 });
 
-gsap.to("#nav", {
+gsap.to(".container", {
   backgroundColor: "#000",
   duration: 0.5,
-  height: "110px",
+  height: "130px",
   scrollTrigger: {
-    trigger: "#nav",
+    trigger: ".container",
     scroller: "body",
     // markers:true,
     start: "top -10%",
@@ -34,6 +34,10 @@ gsap.to("#main", {
 });
 
 var h4all = document.querySelectorAll("#nav h4");
+var btns = document.querySelectorAll("button");
+var cards = document.querySelectorAll(".card");
+var elems = document.querySelectorAll(".elem");
+var ftr = document.querySelectorAll(".f-elem h3");
 
 h4all.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () {
@@ -44,6 +48,66 @@ h4all.forEach(function (elem) {
 });
 
 h4all.forEach(function (elem) {
+  elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #95c11e";
+    crsr.style.backgroundColor = "#95c11e";
+  });
+});
+btns.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 3;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
+});
+
+btns.forEach(function (elem) {
+  elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #95c11e";
+    crsr.style.backgroundColor = "#95c11e";
+  });
+});
+cards.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 3;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
+});
+
+cards.forEach(function (elem) {
+  elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #95c11e";
+    crsr.style.backgroundColor = "#95c11e";
+  });
+});
+elems.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 3;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
+});
+
+elems.forEach(function (elem) {
+  elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #95c11e";
+    crsr.style.backgroundColor = "#95c11e";
+  });
+});
+ftr.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 3;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
+});
+
+ftr.forEach(function (elem) {
   elem.addEventListener("mouseleave", function () {
     crsr.style.scale = 1;
     crsr.style.border = "0px solid #95c11e";
